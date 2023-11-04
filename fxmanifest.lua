@@ -1,10 +1,16 @@
-fx_version 'adamant'
+fx_version 'cerulean'game "gta5"
+lua54 'yes'
+use_experimental_fxv2_oal 'yes'
 
-game "gta5"
+shared_script '@es_extended/imports.lua'
 
-server_script "server.lua"
+
+server_scripts {
+    'server.lua',
+    'config.lua'
+}
 
 client_scripts {
-    "client/powerplant.lua",
-    --"client/prisonbreak.lua"
+    'client/powerplant.lua',
+    'config.lua'
 }
