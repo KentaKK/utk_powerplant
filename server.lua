@@ -1,4 +1,3 @@
-
 local info = {stage = 0, style = nil, locked = false}
 local blackoutstatus = false
 local blackoutdur = 3000 -- Duration of blackout in seconds
@@ -123,7 +122,6 @@ end)
 ESX.RegisterCommand("utkped", 'admin', function(xPlayer, args, showError)
     UTK.DeletePeds()
 end, false)
-
 
 RegisterServerEvent('UTK:spawn', function()
     UTK.CreatePeds()
